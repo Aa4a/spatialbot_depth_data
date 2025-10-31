@@ -48,6 +48,7 @@ Thumbs.db
 *.json
 *.jpg
 *.png
+*.hdf5
 *.zip
 __cache__/
 cache/
