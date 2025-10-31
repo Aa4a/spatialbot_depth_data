@@ -1,9 +1,18 @@
-# Byte-compiled / optimized / DLL files
+# ------------------------
+# Python cache and build
+# ------------------------
 __pycache__/
 *.py[cod]
 *$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+*.so
 
-# Virtual environment
+# ------------------------
+# Virtual environments
+# ------------------------
 .venv/
 env/
 venv/
@@ -11,46 +20,86 @@ ENV/
 env.bak/
 venv.bak/
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# IDE settings
+# ------------------------
+# IDE / Editor
+# ------------------------
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# Logs
-*.log
-
-# OS files
+# ------------------------
+# OS / Misc
+# ------------------------
 .DS_Store
 Thumbs.db
 
-# PyTorch / TensorFlow checkpoints
+# ------------------------
+# Jupyter Notebook
+# ------------------------
+.ipynb_checkpoints/
+
+# ------------------------
+# Logs and outputs
+# ------------------------
+*.log
+logs/
+output/
+__cache__/
+cache/
+
+# ------------------------
+# Deep Learning Artifacts
+# ------------------------
 *.pt
 *.pth
 *.ckpt
+*.onnx
 
-# Data and cache
+# ------------------------
+# Datasets and temporary files
+# ------------------------
 *.pkl
 *.npz
 *.npy
 *.h5
-*.csv
-*.jsonl
-*.json
-*.jpg
-*.png
 *.hdf5
+*.csv
+*.json
+*.jsonl
 *.zip
-__cache__/
-cache/
-logs/
-output/
+*.tar
+*.gz
+
+# ------------------------
+# Image / video / depth data
+# ------------------------
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.mp4
+*.avi
+*.mov
+*.bag   # ROS bag files
+*.pcd   # Point cloud
+*.npy
+depth/
+hdf5/
+data/
+
+# ------------------------
+# ROS-related cache
+# ------------------------
+build/
+devel/
+install/
+log/
+
+# ------------------------
+# Custom ignore for SpatialBot
+# ------------------------
+recordings/
+tmp/
+checkpoints/
