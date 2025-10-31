@@ -84,7 +84,6 @@ cache/
 *.mov
 *.bag   # ROS bag files
 *.pcd   # Point cloud
-*.npy
 depth/
 hdf5/
 data/
@@ -92,7 +91,6 @@ data/
 # ------------------------
 # ROS-related cache
 # ------------------------
-build/
 devel/
 install/
 log/
